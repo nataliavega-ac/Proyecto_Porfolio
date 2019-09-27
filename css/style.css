@@ -1,0 +1,164 @@
+body{
+    background: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+    margin-top: 30px;
+}
+
+header .nav{
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+}
+/*Logo*/
+header .logo h2,
+header .logo span,
+header .logo p{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px;
+}
+header .logo h2{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+header .logo .icono:before{
+    font-family: 'icomoon';
+    content: "\e900";
+    font-size: 16px;
+    color: #bfbfbf;
+}
+
+header .logo p{
+    color: #777777;
+}
+
+/*Menu de navegacion*/
+header .menu{
+   padding: 0px;
+}
+header .menu a div span.text-menu{
+    font-weight: 600;
+}
+header  .menu a{
+    display: block;
+    padding: 0px 40px;
+    text-decoration: none;
+    color: white;
+}
+header .menu .c-1{ background: #3da5e2; }
+header .menu .c-2{ background: #005385; }
+header .menu .c-3{ background: #003855; }
+
+header .menu .c-1:hover{
+    background: #64c3fa; 
+    transition-duration: 0.3s;}
+header .menu .c-2:hover{
+    background: #037dc9;
+    transition-duration: 0.3s; }
+header .menu .c-3:hover{ 
+    background: #105577; 
+    transition-duration: 0.3s;}
+
+header .menu a.icon-maletin:before{
+    content: "\f0b1";
+    font-size: 16px;
+}
+header .menu a.icon-usuario:before {
+    content: "\e971";
+}
+header .menu a.icon-correo:before {
+    content: "\e901";
+}
+
+/* -- slider --*/
+.slider{
+    margin-bottom: 40px;
+}
+.slider .col{
+    padding: 0px;
+}
+
+/*--Portafolio--*/
+.portafolio{
+    background: white;
+    border-top: 5px solid #3da5e2;
+    padding: 0 20px;
+}
+.portafolio .título{
+    padding: 40px 0px;
+    text-align: center;
+    color: #3da5e2;
+    font-weight: 300;
+}
+.portafolio .galeria .contenedor-imagen{
+    margin-bottom: 40px;
+    max-height: 180px;
+    overflow: hidden;
+}
+.portafolio .galeria .contenedor-imagen a{
+    background: #3da5e2;
+    display: inline-block;
+}
+.portafolio .galeria .contenedor-imagen:hover img{
+    opacity: .6; 
+}
+.portafolio .modal-dialog{
+    margin: 0px auto;
+    height: 100%;
+    max-width: 1000px;
+}
+.portafolio .modal-content{
+    width: auto;
+}
+/*-- Acerca de --*/
+.acerca-de{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.acerca-de .foto{
+    text-align: center;
+}
+
+
+
+/* -- Mediaqueries --*/
+
+/*Dispositivo xl*/
+@media screen and (max-width: 1199px){}
+
+/*Dispositivo lg*/
+@media screen and (max-width: 991px){
+  .logo{
+      height: 76px;
+  } 
+  .menu{
+      min-height: 76px;
+  } 
+  .menu a{
+      width: 100%;
+  }
+  .menu a div{
+      width: 100%;
+  }
+}
+
+/*Dispositivo md*/
+@media screen and (max-width: 767px){}
+
+/*Dispositivo sm*/
+@media screen and (max-width: 575px){
+    header{
+        margin-top: 0px;
+    }
+    header .logo h2,
+    header .logo p {
+        font-size: 14px;
+    }
+    header .logo .logo-site{
+        height: 50px;
+        width: 50px;
+    }
+}
