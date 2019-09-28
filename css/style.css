@@ -21,8 +21,9 @@ header .logo p{
     margin: 0px;
 }
 header .logo h2{
+    font-size: 22px;
     font-weight: 800;
-    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
 }
 header .logo .icono:before{
     font-family: 'icomoon';
@@ -121,7 +122,154 @@ header .menu a.icon-correo:before {
 .acerca-de .foto{
     text-align: center;
 }
+.acerca-de .foto img{
+    margin-bottom: 30px;
+}
+.acerca-de .foto .nombre{
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.acerca-de .info .título{
+    color:#005385;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.acerca-de .info .resumen{
+    letter-spacing: 1px;
+}
+.acerca-de .info .label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #005385;
+    margin-bottom: 10px;
+}
+.acerca-de .info .progress{
+    background: #003855;
+    border-radius: 0px;
+    margin-bottom: 15px;
+    height: 25px;
+}
+.acerca-de .info .progress .progress-bar{
+    background: #3da5e2;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
 
+/*-- Contacto --*/
+.contacto{
+    padding: 40px 0;
+    border-top: 2px solid #cbcbcb;
+    border-bottom: 2px solid #cbcbcb;
+    margin-bottom: 40px;
+}
+.contacto .título{
+    color: #003855;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contacto .form-group{
+    margin-bottom: 0;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea{
+    padding: 15px;
+    border: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.formulario textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+.formulario .boton{
+    background: #660066;
+    border: none;
+    padding: 7px 30px;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    border-radius: 3px;
+}
+.formulario .boton:hover{
+    background: #cc33ff;
+    transition-duration: 0.4s;
+}
+
+/*-- Footer --*/
+.footer{
+    background: #0f171b;
+}
+.footer .logo-dark{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+.footer .logo-dark img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+.footer .logo-dark .título-footer{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 25px;
+}
+.footer .info-footer p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto Condensed';
+
+}
+.footer .redes-sociales{
+    padding: 40px 0;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+
+.footer .redes-sociales a.icono{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.footer .redes-sociales a.icono:hover{
+    background: #3da5e2;
+    transition-duration: 0.4s;
+}
+.footer .redes-sociales a.icono:before{
+    font-family: 'icomoon';
+}
+
+.footer .redes-sociales a:nth-child(1):before{
+    content: "\e907";
+}
+.footer .redes-sociales a:nth-child(2):before{
+    content: "\e906";
+}
+.footer .redes-sociales a:nth-child(3):before{
+    content: "\e908";
+}
 
 
 /* -- Mediaqueries --*/
