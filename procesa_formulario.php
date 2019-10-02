@@ -47,12 +47,14 @@ $mail->AltBody = 'pbody';
 
 // Envía el correo
 if (!$mail->send()) {
+  
   // Si salió todo bien devuelve
-  echo json_encode("Mailer Error: " . $mail->ErrorInfo);
+  echo json_encode("ok");  
 
 } else {
     // Si algo falló devuelve
-    echo json_encode("ok");
+    echo json_encode("Mailer Error: " . $mail->ErrorInfo);
+    
 }
 
 

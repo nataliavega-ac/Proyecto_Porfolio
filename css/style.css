@@ -50,11 +50,12 @@ header  .menu a{
     color: white;
 }
 header .menu .c-1{ background: #3da5e2; }
-header .menu .c-2{ background: #005385; }
-header .menu .c-3{ background: #003855; }
+header .menu .c-2{ background: #0372b8; }
+header .menu .c-3{ background: #013f66; }
+header .menu .c-4{ background: #00283b; }
 
 header .menu .c-1:hover{
-    background: #64c3fa; 
+    background: #64c3fa;
     transition-duration: 0.3s;}
 header .menu .c-2:hover{
     background: #037dc9;
@@ -62,15 +63,30 @@ header .menu .c-2:hover{
 header .menu .c-3:hover{ 
     background: #105577; 
     transition-duration: 0.3s;}
+header .menu .c-4:hover{ 
+    background: #3d5866; 
+    transition-duration: 0.3s;}
 
-header .menu a.icon-maletin:before{
-    content: "\f0b1";
+header .menu a span.icon1,
+header .menu a span.icon2,
+header .menu a span.icon3,
+header .menu a span.icon4{
+    font-family: 'icomoon';
     font-size: 16px;
+    color: white;
 }
-header .menu a.icon-usuario:before {
+
+header .menu a span.icon1:before{
+    content: "\f0b1";
+}
+header .menu a span.icon2:before {
     content: "\e971";
 }
-header .menu a.icon-correo:before {
+
+header .menu a span.icon3:before {
+    content: "\f121";
+}
+header .menu a span.icon4:before {
     content: "\e901";
 }
 
@@ -159,6 +175,77 @@ header .menu a.icon-correo:before {
     padding-left: 20px;
 }
 
+/*-- Seccion de Servicios--*/
+.servicios{
+    background: white;
+    border-top: 5px solid #3da5e2;
+    padding: 0 20px;
+}
+.servicios-part2{
+    border-top: 0px;
+}
+.servicios .título-servicios{
+    color:#005385;
+    font-weight: 300;
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.servicios h3{
+    text-align: center;
+    font-size: 20px;
+    color: #037dc9;
+
+}
+.servicios .box-servicios{
+    height: 220px;
+}
+.servicios .box-servicios .imagen-box{
+    background: #f2f2f2;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+}
+.servicios .box-servicios .imagen-box span:before{
+    font-family: 'icomoon';
+    color: #105577;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.servicios .box-servicios .imagen-box span.icono-telefono:before{
+    content: "\e004";
+}
+.servicios .box-servicios .imagen-box span.icono-linea-grafica:before{
+    content: "\e00e";
+}
+.servicios .box-servicios .imagen-box span.icono-carrito-compras:before{
+    content: "\f07a";
+}
+.servicios .box-servicios .imagen-box span.icono-grafico:before{
+    content: "\e018";
+}
+.servicios .box-servicios .imagen-box span.icono-configuracion:before{
+    content: "\e02b";
+}
+.servicios .box-servicios .imagen-box span.icono-email:before{
+    content: "\e028";
+}
+
+.servicios .box-servicios .texto-servicios{
+   
+    
+}
+.servicios .box-servicios .texto-servicios p{
+    color: #787878;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 16px;
+}
+
+
+
+
 /*-- Contacto --*/
 .contacto{
     padding: 40px 0;
@@ -192,6 +279,7 @@ header .menu a.icon-correo:before {
 .formulario .boton{
     background: #660066;
     border: none;
+    text-align: center;
     padding: 7px 30px;
     color: #fff;
     cursor: pointer;
@@ -294,7 +382,9 @@ header .menu a.icon-correo:before {
 }
 
 /*Dispositivo md*/
-@media screen and (max-width: 767px){}
+@media screen and (max-width: 767px){
+
+}
 
 /*Dispositivo sm*/
 @media screen and (max-width: 575px){
