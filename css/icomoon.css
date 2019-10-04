@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?n4h9nw');
-  src:  url('../fonts/icomoon.eot?n4h9nw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?n4h9nw') format('truetype'),
-    url('../fonts/icomoon.woff?n4h9nw') format('woff'),
-    url('../fonts/icomoon.svg?n4h9nw#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qms6p7');
+  src:  url('../fonts/icomoon.eot?qms6p7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qms6p7') format('truetype'),
+    url('../fonts/icomoon.woff?qms6p7') format('woff'),
+    url('../fonts/icomoon.svg?qms6p7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,9 @@
 
 .icon-punto:before {
   content: "\e900";
+}
+.icon-check1:before {
+  content: "\e902";
 }
 .icon-carrito-compras:before {
   content: "\f07a";
@@ -69,6 +72,9 @@
 }
 .icon-grafico:before {
   content: "\e018";
+}
+.icon-basket:before {
+  content: "\e027";
 }
 .icon-configuracion:before {
   content: "\e02b";

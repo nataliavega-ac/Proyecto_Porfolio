@@ -95,10 +95,10 @@ header .menu a span.icon4:before {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 65px;
+    bottom: 20px;
     left: 15%;
     z-index: 10;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
@@ -127,10 +127,14 @@ header .menu a span.icon4:before {
     color: #545454;
     font-size: 14px;
 }
-
-.slider .carousel-inner .carousel-caption{
-    padding: 0px;
-    margin: 0px;
+.slider .carousel-inner .carousel-caption p span.icono-check:before{
+    content: "\e902";
+    font-family: 'icomoon';
+    color: #005385;
+    font-size: 14px;
+}
+#titulo-slider2{
+    color:#003855;
 }
 
 
@@ -171,27 +175,20 @@ header .menu a span.icon4:before {
     padding: 30px;
     margin-bottom: 40px;
 }
-.acerca-de .foto{
-    text-align: center;
-}
-.acerca-de .foto img{
-    margin-bottom: 30px;
-}
-.acerca-de .foto .nombre{
-    color: #545454;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-.acerca-de .info .título{
+
+.acerca-de .titulo-nosotros h2.título{
     color:#005385;
     font-weight: 300;
     font-size: 40px;
     margin-bottom: 30px;
 }
+.acerca-de .info-nosotros{
+    text-align: left;
+}
 .acerca-de .info .resumen{
     letter-spacing: 1px;
 }
+
 .acerca-de .info .label{
     font-size: 18px;
     font-weight: 600;
