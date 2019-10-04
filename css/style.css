@@ -91,6 +91,19 @@ header .menu a span.icon4:before {
 }
 
 /* -- slider --*/
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 65px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
 .slider{
     margin-bottom: 40px;
 }
