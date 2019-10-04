@@ -98,6 +98,29 @@ header .menu a span.icon4:before {
     padding: 0px;
 }
 
+.slider .carousel-inner .carousel-caption h1,
+.slider .carousel-inner .carousel-caption p{
+    font-family: 'Roboto Condensed';
+    color: #3da5e2;
+    margin: 3px 5px;
+    padding: 3px 5px;
+}
+.slider .carousel-inner .carousel-caption h2{
+    color: #545454;
+    font-size: 16px;
+    font-weight: 600;
+}
+.slider .carousel-inner .carousel-caption p{
+    color: #545454;
+    font-size: 14px;
+}
+
+.slider .carousel-inner .carousel-caption{
+    padding: 0px;
+    margin: 0px;
+}
+
+
 /*--Portafolio--*/
 .portafolio{
     background: white;
