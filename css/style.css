@@ -266,10 +266,7 @@ header .menu a span.icon4:before {
     content: "\e028";
 }
 
-.servicios .box-servicios .texto-servicios{
-   
-    
-}
+
 .servicios .box-servicios .texto-servicios p{
     color: #787878;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
@@ -391,6 +388,9 @@ header .menu a span.icon4:before {
 .footer .redes-sociales a:nth-child(3):before{
     content: "\e908";
 }
+.footer .redes-sociales a:nth-child(4):before{
+    content: "\ea96";
+}
 
 
 /* -- Mediaqueries --*/
@@ -432,4 +432,13 @@ header .menu a span.icon4:before {
         height: 50px;
         width: 50px;
     }
+
+    /*-- iconos seccion servicios --*/
+    .servicios .box-servicios .imagen-box span:before{
+        font-family: 'icomoon';
+        color: #105577;
+        font-size: 40px;
+        margin: 0px;
+        padding: 0px;
+    } 
 }
