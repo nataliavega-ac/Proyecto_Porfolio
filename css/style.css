@@ -476,3 +476,146 @@ header .menu a span.icon4:before {
 }
 
 
+/* ------- Para cuando  es un celular ------------- */
+
+.carousel-caption-cel {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.slider .carousel-inner .carousel-caption-cel h1{
+    font-family: 'Roboto Condensed';
+    color: #3da5e2;
+    margin: 3px 5px;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.slider .carousel-inner .carousel-caption-cel h2{
+    color: #545454;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.slider .carousel-inner .carousel-caption-cel p{
+    color: #545454;
+    font-size: 12px;
+}
+
+/* ------- Para cuando  es un celular fin ------------- */
+
+
+/* ------- Para cuando  es un celular en el slide 3------------- */
+
+.carousel-caption-cel-slide3 {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    color: grey;
+    text-align: left;
+}
+
+
+.slider .carousel-inner .carousel-caption-cel-slide3 h1{
+    font-family: 'Roboto Condensed';
+    color: #3da5e2;
+    font-size: 12px;
+}
+
+.slider .carousel-inner .carousel-caption-cel-slide3 h2{
+    color: #545454;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.slider .carousel-inner .carousel-caption-cel-slide3 p{
+    color: #545454;
+    font-size: 12px;
+}
+
+/* ------- Para cuando  es un celular fin ------------- */
+
+
+
+
+
+/* ------- Para el slide 3 ------------- */
+
+.carousel-caption-slide3 {
+    position: absolute;
+    right: 15%;
+    bottom: 35px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: grey;
+    text-align: left;
+  }
+
+.slider .carousel-inner .carousel-caption-slide3 h1{
+    font-family: 'Roboto Condensed';
+    color: #3da5e2;
+    
+    padding-bottom: 20px;
+}
+
+.slider .carousel-inner .carousel-caption-slide3 h2{
+    color: #545454;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.slider .carousel-inner .carousel-caption-slide3 p{
+    color: #545454;
+    font-size: 16px;
+}
+
+.slider .carousel-inner .carousel-caption-slide3 p span.icono-check:before{
+    content: "\e902";
+    font-family: 'icomoon';
+    color: #005385;
+    font-size: 16px;
+}
+
+/* ------- Adapta el carousel de acuerdo a si es celular o una pantalla ----------*/
+
+/* ------- Paracuando no es un celular ------------- */
+@media screen 
+  and (min-width: 650px) 
+                        {
+
+    .carousel-caption-cel {
+        display: none;
+    }
+  
+}
+
+/* ------- Paracuando es un celular ------------- */
+@media screen 
+  and (max-width: 649px) 
+                        {
+
+    .carousel-caption {
+        display: none;
+    }
+    .carousel-caption-slide3 {
+        display: none;
+    }
+    
+}

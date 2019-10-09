@@ -27,11 +27,6 @@ $(function(){
 
 
 
-
-
-
-
-
     // Acciones del formulario de consultas
     $("#boton_formulario").click(function(){
         //console.log("El botón ha sido presionado.");
