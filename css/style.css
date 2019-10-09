@@ -530,6 +530,10 @@ header .menu a span.icon4:before {
 	display:none;
     cursor:pointer;
     z-index: 10;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
 }
 
 .icono-arriba:before {
