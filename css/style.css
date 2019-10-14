@@ -15,7 +15,7 @@ header .nav{
 /*Logo*/
 header .logo h2,
 header .logo span,
-header .logo p{
+header .logo h1{
     font-size: 16px;
     display: inline-block;
     margin: 0px;
@@ -32,7 +32,7 @@ header .logo .icono:before{
     color: #bfbfbf;
 }
 
-header .logo p{
+header .logo h1{
     color: #777777;
 }
 
@@ -112,17 +112,24 @@ header .menu a span.icon4:before {
     padding: 0px;
 }
 
-.slider .carousel-inner .carousel-caption h1,
+.slider .carousel-inner .carousel-caption h2,
 .slider .carousel-inner .carousel-caption p{
     font-family: 'Roboto Condensed';
     color: #3da5e2;
     margin: 3px 5px;
     padding: 3px 5px;
 }
-.slider .carousel-inner .carousel-caption h2{
+.slider .carousel-inner .carousel-caption h3{
     color: #545454;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+}
+.slider .carousel-inner .carousel-caption h4{
+    color:#545454;
     font-size: 16px;
     font-weight: 600;
+
 }
 .slider .carousel-inner .carousel-caption p{
     color: #545454;
@@ -323,41 +330,49 @@ header .menu a span.icon4:before {
 }
 
 /*-- Footer --*/
+
 .footer{
-    background: #0f171b;
+    background: #777777;
 }
 .footer .logo-dark{
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
+
 }
 .footer .logo-dark img{
     position: relative;
     width: 70px;
     height: 70px;
+    border-radius: 50%;
 }
-.footer .logo-dark .título-footer{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    display: inline-block;
-    margin-top: 25px;
-}
-.footer .info-footer p{
-    text-align: center;
-    font-size: 16px;
+
+.footer .logo-dark h2,
+.footer .texto-footer p{
     color: white;
     font-family: 'Roboto Condensed';
-
 }
+.footer .texto-footer .contact-list li{
+    list-style: none;
+    color: white;
+    font-size: 14px;;
+}
+.footer .texto-footer .contact-list li span{
+    font-family:'icomoon';
+    font-size: 16px;
+}
+.footer .texto-footer .contact-list span.icono-WA:before{
+    content: "\e903";
+    color: #25d366;
+}
+.footer .texto-footer .contact-list span.icono-mail:before{
+    content: "\e028";
+  color: #74b2fa;
+}
+
 .footer .redes-sociales{
-    padding: 40px 0;
+    padding-bottom: 40px;
     margin-bottom: 20px;
-    margin-top: 60px;
 }
-
-
 .footer .redes-sociales a.icono{
     width: 40px;
     height: 40px;
@@ -392,6 +407,7 @@ header .menu a span.icon4:before {
 .footer .redes-sociales a:nth-child(4):before{
     content: "\ea96";
 }
+
 
 
 /* -- Mediaqueries --*/
@@ -492,20 +508,25 @@ header .menu a span.icon4:before {
 }
 
 
-.slider .carousel-inner .carousel-caption-cel h1{
+.slider .carousel-inner .carousel-caption-cel h1,
+.slider .carousel-inner .carousel-caption-cel h2.titulo-slide2{
     font-family: 'Roboto Condensed';
     color: #3da5e2;
     margin: 3px 5px;
     padding: 3px 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .slider .carousel-inner .carousel-caption-cel h2{
     color: #545454;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
-
+.slider .carousel-inner .carousel-caption-cel h3{
+    color: #545454;
+    font-size: 12px;
+    font-weight: 400;
+}
 .slider .carousel-inner .carousel-caption-cel p{
     color: #545454;
     font-size: 12px;
@@ -530,15 +551,15 @@ header .menu a span.icon4:before {
 }
 
 
-.slider .carousel-inner .carousel-caption-cel-slide3 h1{
+.slider .carousel-inner .carousel-caption-cel-slide3 h2{
     font-family: 'Roboto Condensed';
     color: #3da5e2;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.slider .carousel-inner .carousel-caption-cel-slide3 h2{
+.slider .carousel-inner .carousel-caption-cel-slide3 h3{
     color: #545454;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -603,7 +624,9 @@ header .menu a span.icon4:before {
     .carousel-caption-cel {
         display: none;
     }
-  
+    .carousel-caption-cel-slide3{
+        display: none;
+    }  
 }
 
 /* ------- Paracuando es un celular ------------- */
@@ -617,5 +640,4 @@ header .menu a span.icon4:before {
     .carousel-caption-slide3 {
         display: none;
     }
-    
 }
