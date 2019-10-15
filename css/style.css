@@ -193,7 +193,6 @@ header .menu a span.icon4:before {
     height: 100px;
     line-height: 100px;
     border-radius: 50%;
-    box-shadow: 3px 3px 15px 15px #f3f3f3;
 }
 .servicios .box-servicios .imagen-box span:before{
     font-family: 'icomoon';
@@ -582,20 +581,6 @@ header .menu a span.icon4:before {
 }
 
 /* ------- Carousel configuraciones para cuando  es un dispositivo intermedio FIN --------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
