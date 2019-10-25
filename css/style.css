@@ -12,7 +12,9 @@ header .nav{
     overflow: hidden;
     background: #fff;
 }
-/*Logo*/
+
+/*-----------Logo-----------*/
+
 header .logo h2,
 header .logo span,
 header .logo h1{
@@ -36,7 +38,7 @@ header .logo h1{
     color: #777777;
 }
 
-/*Menu de navegacion*/
+/*--------Menu de navegacion----------*/
 header .menu{
    padding: 0px;
 }
@@ -90,9 +92,56 @@ header .menu a span.icon4:before {
     content: "\e901";
 }
 
+/*------Slider-------*/
+
+.slider{
+    margin-bottom: 40px;
+}
+.slider .col{
+    padding: 0px;
+}
+.slider .carousel-inner .carousel-caption h2,
+.slider .carousel-inner .carousel-caption p{
+    font-family: 'Roboto Condensed';
+    color: #3da5e2;
+    margin: 3px 5px;
+    padding: 3px 5px;
+}
+.slider .carousel-inner .carousel-caption h2{
+    font-size: 40px;
+}
+.slider .carousel-inner .carousel-caption h3,
+#título-slider3{
+    color: #545454;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+}
+.slider .carousel-inner .carousel-caption h4{
+    color:#545454;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.slider .carousel-inner .carousel-caption p{
+    color: #545454;
+    font-size: 14px;
+}
+.slider .carousel-inner .carousel-caption p span.icono-check:before{
+    content: "\e902";
+    font-family: 'icomoon';
+    color: #005385;
+    font-size: 14px;
+}
+#titulo-slider2{
+    color:#003855;
+}
+#título-slider3{
+    color:#3da5e2;
+}
 
 
-/*--Portafolio--*/
+/*------Portafolio-----*/
 .portafolio{
     background: white;
     border-top: 5px solid #3da5e2;
@@ -124,7 +173,9 @@ header .menu a span.icon4:before {
 .portafolio .modal-content{
     width: auto;
 }
-/*-- Acerca de --*/
+
+
+/*------- Acerca de --------*/
 .acerca-de{
     padding: 30px;
     margin-bottom: 40px;
@@ -162,7 +213,8 @@ header .menu a span.icon4:before {
     padding-left: 20px;
 }
 
-/*-- Seccion de Servicios--*/
+
+/*--------- Seccion de Servicios--------*/
 .servicios{
     background: white;
     border-top: 5px solid #3da5e2;
@@ -230,7 +282,7 @@ header .menu a span.icon4:before {
 
 
 
-/*-- Contacto --*/
+/*----------- Contacto ------------*/
 .contacto{
     padding: 40px 0;
     border-top: 2px solid #cbcbcb;
@@ -275,7 +327,8 @@ header .menu a span.icon4:before {
     transition-duration: 0.4s;
 }
 
-/*-- Footer --*/
+
+/*---------- Footer ------------*/
 
 .footer{
     background: #777777;
@@ -354,61 +407,6 @@ header .menu a span.icon4:before {
     content: "\ea96";
 }
 
-
-
-/* -- Mediaqueries --*/
-
-/*Dispositivo xl*/
-@media screen and (max-width: 1199px){
-}
-
-/*Dispositivo lg*/
-@media screen and (max-width: 991px){ 
-
-  .logo{
-      height: 76px;
-  } 
-  .menu{
-      min-height: 76px;
-  } 
-  .menu a{
-      width: 100%;
-  }
-  .menu a div{
-      width: 100%;
-  }
-}
-
-/*Dispositivo md*/
-@media screen and (max-width: 767px){
-    
-}
-
-/*Dispositivo sm*/
-@media screen and (max-width: 575px){
-    header{
-        margin-top: 0px;
-    }
-    header .logo h2,
-    header .logo p {
-        font-size: 14px;
-    }
-    header .logo .logo-site{
-        height: 50px;
-        width: 50px;
-    }
-    
-
-    /*-- iconos seccion servicios --*/
-    .servicios .box-servicios .imagen-box span:before{
-        font-family: 'icomoon';
-        color: #105577;
-        font-size: 40px;
-        margin: 0px;
-        padding: 0px;
-    } 
-}
-
 /*-- botón para ir arriba --*/
 .ir-arriba {
 	padding:20px;
@@ -439,292 +437,100 @@ header .menu a span.icon4:before {
 
 
 
-
-/* ------- Carousel configuraciones generales------------------------------------------------------------------------------*/
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-  }
+/* -- Mediaqueries --*/
 
 
-.slider{
-    margin-bottom: 40px;
-}
-.slider .col{
-    padding: 0px;
-}
-
-.slider .carousel-inner .carousel-caption h2,
-.slider .carousel-inner .carousel-caption p{
-    font-family: 'Roboto Condensed';
-    color: #3da5e2;
-    margin: 3px 5px;
-    padding: 3px 5px;
-}
-.slider .carousel-inner .carousel-caption h3{
-    color: #545454;
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Roboto Condensed';
-}
-.slider .carousel-inner .carousel-caption h4{
-    color:#545454;
-    font-size: 16px;
-    font-weight: 600;
-
-}
-.slider .carousel-inner .carousel-caption p{
-    color: #545454;
-    font-size: 14px;
-}
-.slider .carousel-inner .carousel-caption p span.icono-check:before{
-    content: "\e902";
-    font-family: 'icomoon';
-    color: #005385;
-    font-size: 14px;
-}
-#titulo-slider2{
-    color:#003855;
-}
-/* ------- Carousel configuraciones generales  FIN ------------------------------------------------------------------------------*/
-
-
-/* ------- Carousel configuraciones para el slide 3 ---------------------------------------------------------------------------- */
-
-.carousel-caption-slide3 {
-    position: absolute;
-    right: 15%;
-    bottom: 35px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    color: grey;
-    text-align: left;
-  }
-
-.slider .carousel-inner .carousel-caption-slide3 h1{
-    font-family: 'Roboto Condensed';
-    color: #3da5e2;
+/*Dispositivo xs*/
+@media screen and (max-width: 575px){
+    header{
+        margin-top: 0px;
+    }
+    header .logo h2,
+    header .logo p {
+        font-size: 14px;
+    }
+    header .logo .logo-site{
+        height: 50px;
+        width: 50px;
+    }
     
-    padding-bottom: 20px;
-}
 
-.slider .carousel-inner .carousel-caption-slide3 h2{
-    color: #545454;
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 20px;
-}
-
-.slider .carousel-inner .carousel-caption-slide3 p{
-    color: #545454;
-    font-size: 16px;
-}
-
-.slider .carousel-inner .carousel-caption-slide3 p span.icono-check:before{
-    content: "\e902";
-    font-family: 'icomoon';
-    color: #005385;
-    font-size: 16px;
-}
-
-
-/* ------- Carousel configuraciones para el slide 3 FIN ---------------------------------------------------------------------------- */
-
-
-/* ------- Carousel configuraciones para cuando  es un dispositivo intermedio --------------------------------------------------------------------- */
-
-.carousel-caption-med {
-    position: absolute;
-    right: 15%;
-    bottom: 0px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    text-align: center;
-}
-
-
-.slider .carousel-inner .carousel-caption-med h1,
-.slider .carousel-inner .carousel-caption-med h2.titulo-slide2{
-    font-family: 'Roboto Condensed';
-    color: #3da5e2;
-    margin: 3px 5px;
-    padding: 3px 5px;
-    font-size: 16px;
-}
-
-.slider .carousel-inner .carousel-caption-med h2{
-    color: #545454;
-    font-size: 14px;
-    font-weight: 600;
-}
-.slider .carousel-inner .carousel-caption-med h3{
-    color: #545454;
-    font-size: 12px;
-    font-weight: 400;
-}
-.slider .carousel-inner .carousel-caption-med p{
-    color: #545454;
-    font-size: 12px;
-}
-
-/* ------- Carousel configuraciones para cuando  es un dispositivo intermedio FIN --------------------------------------------------------------------- */
-
-
-
-
-/* ------- Carousel configuraciones para cuando  es un celular --------------------------------------------------------------------- */
-
-.carousel-caption-cel {
-    position: absolute;
-    right: 15%;
-    bottom: 0px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    color: #fff;
-    text-align: center;
-}
-
-
-.slider .carousel-inner .carousel-caption-cel h1,
-.slider .carousel-inner .carousel-caption-cel h2.titulo-slide2{
-    font-family: 'Roboto Condensed';
-    color: #3da5e2;
-    margin: 3px 5px;
-    padding: 3px 5px;
-    font-size: 16px;
-}
-
-.slider .carousel-inner .carousel-caption-cel h2{
-    color: #545454;
-    font-size: 14px;
-    font-weight: 600;
-}
-.slider .carousel-inner .carousel-caption-cel h3{
-    color: #545454;
-    font-size: 12px;
-    font-weight: 400;
-}
-.slider .carousel-inner .carousel-caption-cel p{
-    color: #545454;
-    font-size: 12px;
-}
-
-/* ------- Carousel configuraciones para cuando  es un celular FIN --------------------------------------------------------------------- */
-
-
-/* ------- Carousel configuraciones para cuando es un celular para slide 3 -------------------------------------------------------------- */
-
-
-.carousel-caption-cel-slide3 {
-    position: absolute;
-    right: 15%;
-    bottom: 0px;
-    left: 0%;
-    z-index: 10;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    color: grey;
-    text-align: left;
-}
-
-
-.slider .carousel-inner .carousel-caption-cel-slide3 h2{
-    font-family: 'Roboto Condensed';
-    color: #3da5e2;
-    font-size: 16px;
-}
-
-.slider .carousel-inner .carousel-caption-cel-slide3 h3{
-    color: #545454;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.slider .carousel-inner .carousel-caption-cel-slide3 p{
-    color: #545454;
-    font-size: 12px;
-}
-
-/* ------- Carousel configuraciones para cuando es un celular para slide 3 FIN-------------------------------------------------------------- */
-
-
-
-/* ------- QueryScreen para adaptar a la pantalla------------------------------------------------------------------------------------------*/
-
-
-
-/* ------- Paracuando no es un celular ------------- */
-@media screen 
-  and (min-width: 1000px)
-                        {
-
-    .carousel-caption-med {
-        display: none;
+    /*-- iconos seccion servicios --*/
+    .servicios .box-servicios .imagen-box span:before{
+        font-family: 'icomoon';
+        color: #105577;
+        font-size: 40px;
+        margin: 0px;
+        padding: 0px;
+    } 
+    /*---Texto para dispositivos móviles slider*/
+    h2#título-slider3{
+       font-size: 16px;
     }
-
-    .carousel-caption-cel {
-        display: none;
+    .slider .carousel-inner .carousel-caption h4{
+       font-size: 13px;
+       font-weight: 600;
     }
-    .carousel-caption-cel-slide3{
-        display: none;
-    }  
+    .slider .carousel-inner .carousel-caption .texto-movil{
+       font-size: 12px;
+       margin: 0px;
+       padding: 0px;
+    }
+    
+    h4#titulo-slider1{
+        color: #3da5e2;
+        font-size: 16px;
+    }
+    h3#titulo-slider2{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
 }
 
 
-
-
-/* ------- Paracuando no es un celular ------------- */
-@media screen 
-  and (min-width: 650px)
-  and (max-width: 999px)  
-                        {
-
-    .carousel-caption-cel {
-        display: none;
+/*Dispositivo sm*/
+@media screen and (max-width: 767px){
+    h2#título-slider3{
+        font-size: 20px;
     }
-    .carousel-caption-cel-slide3{
-        display: none;
-    }  
-    .carousel-caption {
-        display: none;
+    .slider .carousel-inner .carousel-caption{
+        padding-bottom: 10px;
     }
-    .carousel-caption-slide3 {
-        display: none;
+    .slider .carousel-inner .carousel-caption h2{
+        font-size: 30px;
+        padding-bottom: 0px;
+    }
+    
+    h4#titulo-slider1{
+        color: #3da5e2;
+        font-size: 16px;
+    }
+    h3#titulo-slider2{
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 
-/* ------- Paracuando es un celular ------------- */
-@media screen 
-  and (max-width: 649px) 
-                        {
+/*Dispositivo md*/
+@media screen and (max-width: 991px){ 
 
-    .carousel-caption-med {
-        display: none;
+    .logo{
+        height: 76px;
+    } 
+    .menu{
+        min-height: 76px;
+    } 
+    .menu a{
+        width: 100%;
     }
+    .menu a div{
+        width: 100%;
+    }
+    .slider .carousel-inner .carousel-caption h2{
+        font-size: 30px;
+    }
+  }
+  
 
-    .carousel-caption {
-        display: none;
-    }
-    .carousel-caption-slide3 {
-        display: none;
-    }
-}
-
-/* ------- QueryScreen para adaptar a la pantalla  FIN----------------------------------------------------------------------------------------*/
+  
