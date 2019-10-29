@@ -1,9 +1,9 @@
 <?php
 
 // Tomamos las variables 
-$opcion = isset($_POST["nombre"])?$_POST["nombre"]:'';
-$opcion = isset($_POST["email"])?$_POST["email"]:'';
-$opcion = isset($_POST["mensaje"])?$_POST["mensaje"]:'';
+$nombre = isset($_POST["nombre"])?$_POST["nombre"]:'';
+$email = isset($_POST["email"])?$_POST["email"]:'';
+$mensaje = isset($_POST["mensaje"])?$_POST["mensaje"]:'';
 
 
 date_default_timezone_set('Etc/UTC');
@@ -23,21 +23,21 @@ $mail->SMTPDebug = 0;
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
-$mail->Username = "mi_mail@gmail.com";  // acá va una cuenta de correo real
-$mail->Password = "mi_password"; // acá va tu password real
+$mail->Username = "xxxx@gmail.com";  // acá va una cuenta de correo real
+$mail->Password = "xxxxxx"; // acá va tu password real
 
 
-$mail->setFrom('mi_mail@gmail.com', 'Notificación desde Mi página'); // Muestra quien envia
-$mail->addReplyTo('mi_mail@gmail.com', 'Notificación desde Mi página'); // Mail de respuesta
+$mail->setFrom('xxx@gmail.com', 'Notificación desde We Help'); // Muestra quien envia
+$mail->addReplyTo('xxx@gmail.com', 'Notificación desde We Help'); // Mail de respuesta
  
 // Email de DESTINO del formulario
-$mail->AddAddress('mi_mail@gmail.com');
+$mail->AddAddress('xxx@gmail.com');
  
 //Contenido del subject
-$mail->Subject = 'Consulta desde formulario de mi página';
+$mail->Subject = 'Consulta desde formulario de We Help';
 
 // Cuerpo del mail
-$mail->Body = '<h3 align="center"><u> Consulta desde el formulario de mi página </h3></u>' .
+$mail->Body = '<h3 align="center"><u> Consulta desde el formulario de We Help </h3></u>' .
 '<p><b> Nombre: </b>' . $nombre . '<p>' .
 '<p><b> Email: </b>' . $email . '<p>' .
 '<p><b> Mensaje: </b>' . $mensaje . '<p>';
@@ -47,14 +47,15 @@ $mail->AltBody = 'pbody';
 
 // Envía el correo
 if (!$mail->send()) {
-  
-  // Si salió todo bien devuelve
-  echo json_encode("ok");  
-
-} else {
+    
     // Si algo falló devuelve
     echo json_encode("Mailer Error: " . $mail->ErrorInfo);
-    
+  
+
+} else {
+  
+    // Si salió todo bien devuelve
+  echo json_encode("ok");  
 }
 
 

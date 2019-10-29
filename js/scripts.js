@@ -29,14 +29,14 @@ $(function(){
 
     // Acciones del formulario de consultas
     $("#boton_formulario").click(function(){
-        //console.log("El botón ha sido presionado.");
+        console.log("El botón ha sido presionado.");
 
         // Declaración de variables
         let nombre = $("#nombre").val();
         let email = $("#email").val();
         let mensaje = $("#mensaje").val();
 
-        //console.log("Nombre: " + nombre + " Email: " + email + " Mensaje: " + mensaje );
+        console.log("Nombre: " + nombre + " Email: " + email + " Mensaje: " + mensaje );
 
         // Variables para pasarle al procesador del formulario procesa_formulario.php
         var parametros = {
@@ -54,10 +54,13 @@ $(function(){
             url: 'procesa_formulario.php',
             data: parametros,
             success:function(data){
-               console.log("Todo bien: " + data); 
+                $.notify("Formulario enviado con éxito.", "success");
+                $("#nombre").val("");
+                $("#email").val("");
+                $("#mensaje").val("");
             },
             error: function (xhr, ajaxOptions, thrownError) {
-              console.log("Algo falló: " + thrownError);
+                $.notify("Existió un error en el envío del mail", "error");
             }
         });
 
