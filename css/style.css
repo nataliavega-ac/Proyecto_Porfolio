@@ -303,7 +303,6 @@ header .menu a span.icon4:before {
 .formulario input[type="email"],
 .formulario textarea{
     padding: 15px;
-    border: none;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -532,5 +531,11 @@ header .menu a span.icon4:before {
     }
   }
   
-
+/* Validación */
+.borde_normal {
+    border: 0px;
+}
+.borde_alerta {
+    border: 1px solid red;  
+}
   
