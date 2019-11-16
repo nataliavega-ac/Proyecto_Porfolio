@@ -23,15 +23,15 @@ $mail->SMTPDebug = 0;
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
-$mail->Username = "xxxx@gmail.com";  // acá va una cuenta de correo real
-$mail->Password = "xxxxxx"; // acá va tu password real
+$mail->Username = "wehelp.dev@gmail.com";  // acá va una cuenta de correo real
+$mail->Password = "Faq23jl45"; // acá va tu password real
 
 
-$mail->setFrom('xxx@gmail.com', 'Notificación desde We Help'); // Muestra quien envia
-$mail->addReplyTo('xxx@gmail.com', 'Notificación desde We Help'); // Mail de respuesta
+$mail->setFrom('wehelp.dev@gmail.com', 'Notificación desde We Help'); // Muestra quien envia
+$mail->addReplyTo('wehelp.dev@gmail.com', 'Notificación desde We Help'); // Mail de respuesta
  
 // Email de DESTINO del formulario
-$mail->AddAddress('xxx@gmail.com');
+$mail->AddAddress('xxx');
  
 //Contenido del subject
 $mail->Subject = 'Consulta desde formulario de We Help';
