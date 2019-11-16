@@ -31,7 +31,7 @@ $mail->setFrom('wehelp.dev@gmail.com', 'Notificación desde We Help'); // Muestr
 $mail->addReplyTo('wehelp.dev@gmail.com', 'Notificación desde We Help'); // Mail de respuesta
  
 // Email de DESTINO del formulario
-$mail->AddAddress('xxx');
+$mail->AddAddress('vera.sonia3@gmail.com');
  
 //Contenido del subject
 $mail->Subject = 'Consulta desde formulario de We Help';
